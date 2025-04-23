@@ -104,3 +104,6 @@ for file_path in list_of_files:
 
 # Exibir os arquivos processados
 print("Arquivos processados:", df_dict.keys())
+
+for ref, df in df_dict.items():
+    df.to_excel("./planilhas_direcionais/" + ref[:-4] + ".xlsx")
